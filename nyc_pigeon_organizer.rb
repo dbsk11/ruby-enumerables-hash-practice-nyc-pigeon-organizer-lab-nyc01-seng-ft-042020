@@ -4,7 +4,7 @@ def nyc_pigeon_organizer(data)
     hash.each do |trait, array|
       array.each do |name|
         if !pigeons.has_key?(name)
-          pigeons(name) = {}
+          pigeons[name] = {}
         end
         if !pigeons[name].has_key?(attribute)
           pigeons[name][attribute] = []
